@@ -27,13 +27,7 @@ Comment.init(
         key: "id",
       },
     },
-    comment_date: {
-      type: DataTypes.DATE,
-      allowNull: true,
-      defaultValue: DataTypes.NOW
-    },
-
-    comment_text: {
+   comment_text: {
       type: DataTypes.STRING,
       allowNull: true,
       validate: {
@@ -44,7 +38,7 @@ Comment.init(
 
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: "Comment",
