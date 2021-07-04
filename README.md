@@ -1,5 +1,7 @@
 # Tech-Blog
+
 # Table of Content
+
 *[General information](#general-information)
 
 *[Specifications](#specifications)
@@ -10,6 +12,7 @@
 
 
 ## General information
+
 This is a tech blog that allows a user to post about whatever they wish. It supports account creation with secure password hashing and storage as well as the ability to login. Users can view all posts, or go to their dashboards to see the posts they have made. They can also comment on posts if they are logged in. If the user idles for too long they will be logged out of their account
 
 ## Specifications
@@ -66,11 +69,6 @@ Adding a Comment
 
 ## Deployment
 
-Here is the Video Demo of the functionalities  of the application
-
-
-On Youtube: [Demo video](https://youtu.be/SJ_0dnwNwNs)
-
-
+Users can view the deployed project [here](https://techblogsapp.herokuapp.com/). If you intend to iterate on the project, besides downloading the repo to your machine, be sure to run npm i in the root directory and to also have MyMSQL installed and ready. To run the apllication ,type "node server.js" in your terminal.
 
 
