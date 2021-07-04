@@ -40,7 +40,7 @@ router.get('/', withAuth, (req, res) => {
         res.status(500).json(err);
       });
   });
-
+ // route to edit/delete a post
   router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
       where: {
@@ -86,7 +86,7 @@ router.get('/', withAuth, (req, res) => {
         res.status(500).json(err);
       });
 });
-
+//route to create a new post
 router.get('/create/', withAuth, (req, res) => {
     Post.findAll({
       where: {

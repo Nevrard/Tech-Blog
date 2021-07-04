@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
+//render all post for the  homePage
 router.get('/', (req, res) => {
     console.log(req.session);
     
@@ -40,6 +41,8 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
 })
+
+// Get information for a single post to add comment
   router.get('/post/:id', (req, res) => {
     Post.findOne({
       where: {
